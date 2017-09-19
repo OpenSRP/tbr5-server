@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: dashboard_rest_client
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: AHMED
+Implementation-Vendor-Id: com.ihsinformatics
+Build-Jdk: 1.8.0_144
+Implementation-URL: http://projects.spring.io/spring-boot/dashboard_re
+ st_client/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

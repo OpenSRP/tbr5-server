@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dashboard_rest_client/dashboard_rest_client.iml" filepath="$PROJECT_DIR$/dashboard_rest_client/dashboard_rest_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tb_reach5_dashboard.iml" filepath="$PROJECT_DIR$/tb_reach5_dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tbreach5_etl/tbreach5_etl.iml" filepath="$PROJECT_DIR$/tbreach5_etl/tbreach5_etl.iml" />
+    </modules>
+  </component>
+</project>
