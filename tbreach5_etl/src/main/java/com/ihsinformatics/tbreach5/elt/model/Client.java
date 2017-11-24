@@ -1,6 +1,8 @@
 package com.ihsinformatics.tbreach5.elt.model;
 
+import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.List;
 
 public class Client {
 	
@@ -20,6 +22,25 @@ public class Client {
 	private String voidReason;
 	private int _void;
 	private String serverVersion;
+	//private List<Identifier> identifiers;
+	private List<Address> addresses;
+
+	public List<Address> getAddresses() {
+		return addresses;
+	}
+
+	public void setAddresses(List<Address> addresses) {
+		this.addresses = addresses;
+	}
+/*
+	public List<Identifier> getIdentifiers() {
+		return identifiers;
+	}
+
+	public void setIdentifiers(List<Identifier> identifiers) {
+		this.identifiers = identifiers;
+	}
+*/
 	public int getClientID() {
 		return clientID;
 	}
@@ -116,6 +137,7 @@ public class Client {
 	public void setServerVersion(String serverVersion) {
 		this.serverVersion = serverVersion;
 	}
+
 	@Override
 	public String toString() {
 		return "Client [clientID=" + clientID + ", firstName=" + firstName + ", lastName=" + lastName + ", entityID="

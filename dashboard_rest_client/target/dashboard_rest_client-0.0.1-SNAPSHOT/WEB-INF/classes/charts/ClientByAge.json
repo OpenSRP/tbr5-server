@@ -1,0 +1,9 @@
+{
+	"fileName":"ClientByAge",
+  "chartName":"Client BY Age", 
+  "query":"select  \"gender\",count(*) as total  from \"client\" group by \"gender\"; ", 
+   "type":"pie", 
+   "labels": ["Male","Female", "Other", "Unknown"],
+   "backgroundColor":["Yellow","Red","Green","Blue","Purple", "Pink"]
+   
+}

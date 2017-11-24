@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cityA" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4e34f802-603b-4276-a595-e3ec3dd6448c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="PostgreSQL"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[SELECT "clientID", "firstName", "middleName", "lastName", "birthDate", 
+       "deathDate", "birthDateApprox", "deathDateApprox", gender, "dateCreated", 
+       "dateEdited", voided, "dateVoid", "voidReason", "serverVersion", 
+       "entityID", creator, editor, void
+  FROM public."Client"]]>
+	</queryString>
+	<field name="clientID" class="java.lang.Integer"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="middleName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="birthDate" class="java.sql.Timestamp"/>
+	<field name="deathDate" class="java.sql.Timestamp"/>
+	<field name="birthDateApprox" class="java.lang.Boolean"/>
+	<field name="deathDateApprox" class="java.lang.Boolean"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="dateCreated" class="java.sql.Timestamp"/>
+	<field name="dateEdited" class="java.sql.Timestamp"/>
+	<field name="voided" class="java.lang.Boolean"/>
+	<field name="dateVoid" class="java.sql.Timestamp"/>
+	<field name="voidReason" class="java.lang.String"/>
+	<field name="serverVersion" class="java.lang.String"/>
+	<field name="entityID" class="java.lang.String"/>
+	<field name="creator" class="java.lang.String"/>
+	<field name="editor" class="java.lang.String"/>
+	<field name="void" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="202" y="20" width="150" height="30" uuid="88588d1d-1d12-4e68-b052-2c26e68fbe5d"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[WORLD]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="25" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="32" uuid="444acaff-83c1-47d2-9cc2-251d72395533"/>
+				<text><![CDATA[clientID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="32" uuid="fc6a56b0-5db1-43a0-8f53-daf090de4807"/>
+				<text><![CDATA[firstName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="32" uuid="a0ba9990-3ad3-4acc-b573-4e578449b280"/>
+				<text><![CDATA[lastName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="32" uuid="4e403ff5-d15b-4c39-a9cf-d34bcf206bf1"/>
+				<text><![CDATA[birthDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="32" uuid="f5fab385-2d2f-4eab-8565-cf3f1ce0f8e5"/>
+				<text><![CDATA[gender]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="75" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+			<textField>
+				<reportElement x="0" y="0" width="111" height="75" uuid="0356048e-4975-446a-be2d-a8a7dfb67f67"/>
+				<textFieldExpression><![CDATA[$F{clientID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="75" uuid="f2d3f940-6472-4bb3-9e03-6aa28769d592"/>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="75" uuid="85f1f897-a642-4474-bfec-5c015c15fb0e"/>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="75" uuid="e1e93383-9113-4e3d-92dd-b7f3c63e2168"/>
+				<textFieldExpression><![CDATA[$F{birthDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="75" uuid="d71861d2-f1b4-463f-ac5b-3d8aec924441"/>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="58" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="31" splitType="Stretch"/>
+	</summary>
+</jasperReport>

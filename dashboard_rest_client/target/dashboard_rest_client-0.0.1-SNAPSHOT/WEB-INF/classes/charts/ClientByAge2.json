@@ -1,0 +1,25 @@
+{
+	"fileName":"ClientByAge2",
+  "chartName":"Client BY Age2", 
+  "query":"file::query1.sql", 
+  "type":"pie", 
+  "chartData":{
+       "labels": ["Male","Female", "Other", "Unknown"],
+       "datasets": [
+         {
+           "label":"Population",
+           
+           "backgroundColor":[
+            "Yellow",
+             "Red",
+             "Green",
+             "Blue",
+             "Purple",
+             "Pink"
+           ]
+         }
+       ]
+     }
+
+
+}

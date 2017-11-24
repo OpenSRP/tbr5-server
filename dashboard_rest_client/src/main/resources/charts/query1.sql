@@ -1,0 +1,1 @@
+select  "gender",count(*) as total  from "client" group by "gender";

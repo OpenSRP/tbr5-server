@@ -2,9 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e8380e-076f-4757-ae46-7dffbc46fa4f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/dashboard_rest_client_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/dashboard_rest_client_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_2_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_2_1_7_js2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jasperreports_jasperreports_6_0_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_10_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_8_5_16.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_12_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_support_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/AdditionalConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/mapper/AddressMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/mapper/ClientMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/mapper/ContactPointMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Address.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Client.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/ContactPoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Event.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/EventType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Identifier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Obs.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Project.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/ClientController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/Home.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/JasperEndPoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/webapp/pages/allclient.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/webapp/pages/error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/webapp/pages/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/mapper/AddressMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/mapper/ContactPointMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Address.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/ContactPoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Event.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/EventType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Identifier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Obs.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Project.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/service/ClientService.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard_rest_client/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard_rest_client/target/classes/META-INF/maven/com.ihsinformatics/dashboard_rest_client/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard_rest_client/target/classes/META-INF/maven/com.ihsinformatics/dashboard_rest_client/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tbreach5_etl/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tbreach5_etl/target/classes/META-INF/maven/com.ihsinformatics/tbreach5_etl/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tbreach5_etl/target/classes/META-INF/maven/com.ihsinformatics/tbreach5_etl/pom.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard_rest_client/dashboard_rest_client.iml" afterPath="$PROJECT_DIR$/dashboard_rest_client/dashboard_rest_client.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard_rest_client/pom.xml" afterPath="$PROJECT_DIR$/dashboard_rest_client/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/DemoApplication.java" afterPath="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/DemoApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbConfig.java" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbMapper.java" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/mapper/ClientMapper.java" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/mapper/ClientMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Client.java" afterPath="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tbreach5_etl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/tbreach5_etl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tbreach5_etl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/tbreach5_etl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/dashboard_rest_client/target/" />
@@ -17,24 +73,98 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CouchdbConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbConfig.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AdditionalConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/AdditionalConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="-114">
+              <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CouchdbMapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbMapper.java">
+      <file leaf-file-name="JasperEndPoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/JasperEndPoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DemoApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/DemoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/ClientController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard_rest_client/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="78" column="15" lean-forward="true" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allclient.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/webapp/pages/allclient.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/Home.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="8" column="81" lean-forward="false" selection-start-line="8" selection-start-column="81" selection-end-line="8" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -45,7 +175,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -60,8 +192,38 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbConfig.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/mapper/ClientMapper.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Address.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/ContactPoint.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/mapper/ContactPointMapper.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Event.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/EventType.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Project.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Obs.java" />
         <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbMapper.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Identifier.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbConfig.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/mapper/AddressMapper.java" />
+        <option value="$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Client.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/JasperReportApp.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/JasperEndPoint.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/controller/ClientController.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Identifier.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/webapp/WEB-INF/pages/allClient.html" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/mapper/AddressMapper.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/mapper/ClientMapper.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/mapper/ContactPointMapper.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Address.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Client.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/ContactPoint.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Obs.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/webapp/pages/allclient.html" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/DemoApplication.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/Home.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/ClientController.java" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/pom.xml" />
+        <option value="$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/AdditionalConfig.java" />
       </list>
     </option>
   </component>
@@ -71,6 +233,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -79,11 +248,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -100,66 +269,56 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="tb_reach5_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tb_reach5_dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="tbr5-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbr5-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="tb_reach5_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tb_reach5_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="tbreach5_etl" type="462c0819:PsiDirectoryNode" />
+              <item name="tbr5-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbr5-server" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard_rest_client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="tb_reach5_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tb_reach5_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="tbreach5_etl" type="462c0819:PsiDirectoryNode" />
+              <item name="tbr5-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbr5-server" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard_rest_client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="tb_reach5_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tb_reach5_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="tbreach5_etl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tb_reach5_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tb_reach5_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="tbreach5_etl" type="462c0819:PsiDirectoryNode" />
+              <item name="tbr5-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbr5-server" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard_rest_client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="tb_reach5_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tb_reach5_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="tbreach5_etl" type="462c0819:PsiDirectoryNode" />
+              <item name="tbr5-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbr5-server" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard_rest_client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="elt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="tb_reach5_dashboard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tb_reach5_dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="tbreach5_etl" type="462c0819:PsiDirectoryNode" />
+              <item name="tbr5-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbr5-server" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard_rest_client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="elt" type="462c0819:PsiDirectoryNode" />
-              <item name="couchdb" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,6 +328,35 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Groovy" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="tbr5-server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AHMED\Desktop\tbr5-server\dashboard_rest_client\src\main" />
+      <recent name="C:\Users\AHMED\Desktop\tbr5-server\dashboard_rest_client\src\main\webapp" />
+      <recent name="C:\Users\AHMED\Desktop\tbr5-server\dashboard_rest_client\src\main\java\com\ihsinformatics\app" />
+      <recent name="C:\Users\AHMED\Desktop\tbr5-server\dashboard_rest_client\src\main\resource" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ihsinformatics.app.web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AHMED\Desktop\tbr5-server\dashboard_rest_client\src\main\webapp" />
+      <recent name="C:\Users\AHMED\Desktop\tbr5-server\dashboard_rest_client\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -230,6 +418,79 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="dashboard_rest_client:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_tbr5-server" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52437" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="dashboard_rest_client:war" />
+        </option>
+      </method>
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -270,9 +531,89 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="tbreach5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="dashboard_rest_client:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_tbr5-server" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52437" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="Make" enabled="false" />
+        <option name="BuildArtifacts" enabled="false">
+          <artifact name="dashboard_rest_client:war" />
+        </option>
+      </method>
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.DemoApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tbreach5" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -283,37 +624,54 @@
       <updated>1505277538674</updated>
       <workItem from="1505277542081" duration="691000" />
       <workItem from="1505801333000" duration="3035000" />
+      <workItem from="1505804985781" duration="9614000" />
+      <workItem from="1506058350949" duration="2803000" />
+      <workItem from="1506314035396" duration="15320000" />
+      <workItem from="1506490872416" duration="622000" />
+      <workItem from="1506919463013" duration="5350000" />
+      <workItem from="1506930894438" duration="4796000" />
+      <workItem from="1507097687752" duration="231000" />
+      <workItem from="1507182678295" duration="2711000" />
+      <workItem from="1507527695224" duration="1218000" />
+      <workItem from="1507612991882" duration="4318000" />
+      <workItem from="1507618497587" duration="4219000" />
+      <workItem from="1507623815130" duration="3605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3726000" />
+    <option name="totallyTimeSpent" value="58533000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35188216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21406959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -329,25 +687,398 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/JasperEndPoint.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/Home.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/AdditionalConfig.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbConfig.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/ContactPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/EventType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Obs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbMapper.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="56" lean-forward="false" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../opensrp-server-thrivepk/opensrp-core/src/main/java/org/opensrp/domain/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Identifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/couchdb/CouchdbConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="79" column="45" lean-forward="false" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/mapper/ContactPointMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/mapper/AddressMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-tbreach5_etl">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-tbreach5_etl</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">mdl-tbreach5_etl</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-247.0" y="-35.0" />
+          <SelectedNodes>
+            <node>mdl-tbreach5_etl</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-tb_reach5_dashboard">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-tb_reach5_dashboard</OriginalElement>
+          <nodes>
+            <node x="" y="">mdl-tb_reach5_dashboard</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="419.0" y="65.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/JasperReportApp.java" />
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/resources/reports/city.jrxml" />
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/resources/jasperreports/reports/city.jrxml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/controller/ClientController.java" />
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/service/ServiceProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/service/ServiceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/service/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/mapper/ClientMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/service/ClientService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/src/main/java/com/ihsinformatics/tbreach5/elt/service/ApplicationStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbreach5_etl/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="41" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/mapper/ClientMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/mapper/ContactPointMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/mapper/AddressMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="109" column="31" lean-forward="false" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="76" column="33" lean-forward="false" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/ContactPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="78" column="31" lean-forward="false" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/EventType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Identifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Obs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="95" column="28" lean-forward="false" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/model/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/webapp/webapp/pages/error.html" />
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/webapp/pages/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/webapp/pages/allclient.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/Home.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="81" lean-forward="false" selection-start-line="8" selection-start-column="81" selection-end-line="8" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/web/JasperEndPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/dashboard_rest_client.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="78" column="15" lean-forward="true" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_rest_client/src/main/java/com/ihsinformatics/app/AdditionalConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

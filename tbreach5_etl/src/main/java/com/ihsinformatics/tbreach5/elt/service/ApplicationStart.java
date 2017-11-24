@@ -24,21 +24,20 @@ import com.ihsinformatics.tbreach5.elt.model.Client;
 
 
 
+
 @EnableAutoConfiguration
 @Configuration
-@MappedTypes(Client.class)
+@MappedTypes(value = {Client.class})
 @MapperScan("com.ihsinformatics.tbreach5.elt.mapper")
 @SpringBootApplication
 public class ApplicationStart {
-	@Autowired
-	private static ClientMapper clientMapper;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(ApplicationStart.class, args);
 		
 		
 		System.out.println("========================================================");
-	System.out.println("Size : "+   clientMapper.selectAll().toString() );
+		//System.out.println(clientMapper);
 		System.out.println("========================================================");
 	}
 

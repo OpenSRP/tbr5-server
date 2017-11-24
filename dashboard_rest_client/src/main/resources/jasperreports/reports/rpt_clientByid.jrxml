@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="client By id" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="db00bd72-4022-40e6-aa53-6b0dd9a874c2">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="PostgreSQL"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="clientid" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[$P{clientid}]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT "clientID", "firstName", "middleName", "lastName", "birthDate", 
+       "deathDate", "birthDateApprox", "deathDateApprox", gender, "dateCreated", 
+       "dateEdited", voided, "dateVoid", "voidReason", "serverVersion", 
+       "entityID", creator, editor, void
+  FROM public."Client"  where   "Client"."clientID"  =$P{clientid}]]>
+	</queryString>
+	<field name="clientID" class="java.lang.Integer"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="middleName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="birthDate" class="java.sql.Timestamp"/>
+	<field name="deathDate" class="java.sql.Timestamp"/>
+	<field name="birthDateApprox" class="java.lang.Boolean"/>
+	<field name="deathDateApprox" class="java.lang.Boolean"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="dateCreated" class="java.sql.Timestamp"/>
+	<field name="dateEdited" class="java.sql.Timestamp"/>
+	<field name="voided" class="java.lang.Boolean"/>
+	<field name="dateVoid" class="java.sql.Timestamp"/>
+	<field name="voidReason" class="java.lang.String"/>
+	<field name="serverVersion" class="java.lang.String"/>
+	<field name="entityID" class="java.lang.String"/>
+	<field name="creator" class="java.lang.String"/>
+	<field name="editor" class="java.lang.String"/>
+	<field name="void" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="0" width="150" height="30" uuid="7d7db522-9212-41a6-aa3e-860df23638df"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Client By ID]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="475" y="0" width="100" height="30" uuid="c22393ef-dbd0-41ab-8926-ef4d3f7bcac0"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="8" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="53a983f3-a712-4186-9677-4813cf8a65fb"/>
+				<text><![CDATA[clientID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="30" uuid="a82f605c-5992-46ee-85e0-dab7079f3ef1"/>
+				<text><![CDATA[firstName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="30" uuid="e5d11648-1d7b-4504-bb1d-6813177fe1dd"/>
+				<text><![CDATA[middleName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="0" width="100" height="30" uuid="ecfbc943-aeb8-437f-9cbf-7ea17b6bdd92"/>
+				<text><![CDATA[lastName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="0" width="100" height="30" uuid="7c3eb16f-84d8-429e-bd57-aac3db22be23"/>
+				<text><![CDATA[birthDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="0" width="40" height="30" uuid="b9c1581a-9aae-4158-9cef-04b7614f0cac"/>
+				<text><![CDATA[gender]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="a13aecbe-41f4-4052-ae73-ad80ff2b6bdd"/>
+				<textFieldExpression><![CDATA[$F{clientID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="30" uuid="fc8f0e99-dae6-495f-a4a9-cf00de79153f"/>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="30" uuid="d1dd3578-6806-4dc1-98d9-ebb70e83b9b3"/>
+				<textFieldExpression><![CDATA[$F{middleName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="30" uuid="82a666cf-2b1f-4578-a817-d3135c22f122"/>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="30" uuid="0ae1324f-c6bd-48aa-b912-712a8fb145b5"/>
+				<textFieldExpression><![CDATA[$F{birthDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="45" height="30" uuid="2b116e95-58a5-4617-be85-a365de9d3bfc"/>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
