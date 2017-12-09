@@ -1,70 +1,160 @@
 package com.ihsinformatics.tbreach5.elt.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Event {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
-    private int eventID;
-    private int eventTypeID;
-    private String eventName;
-    private int clientID;
-    private Date eventTimeStamp;
-    private String eventDataJSON;
-    private String entityID;
+@Entity
+@Table(name="event")
+public class Event implements Serializable {
+	@Id
+	@GeneratedValue
+	@Column(name = "eventid")
+	private int  eventid;
+	
+	@Column(name = "eventtype")
+	private String eventtype;
+	
+	@Column(name = "eventname")
+	private String eventname;
+	
 
-    public int getEventID() {
-        return eventID;
-    }
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "clientid")
+	private Client client;
+	
+	@Column(name = "eventdate")
+	private Date eventdate;
+	
+	/*@Column(name = "eventdatajson")
+	private String eventdatajson;*/
+	
+	@Column(name = "entityid")
+	private String entityid;
+	
+	@Column(name = "formsubmissionid")
+	private String formsubmissionid;
+	
+	@Column(name = "entityType")
+	private String entityType;
+	
+	@Column(name = "duration")
+	private Long duration;
+	
+	@Column(name = "datecreated")
+	private Date datecreated;
+	
+	@Column(name = "locationid")
+	private String locationid;
+	
+	@Column(name = "version")
+	private Long version;
 
-    public void setEventID(int eventID) {
-        this.eventID = eventID;
-    }
+	public int getEventid() {
+		return eventid;
+	}
 
-    public int getEventTypeID() {
-        return eventTypeID;
-    }
+	public void setEventid(int eventid) {
+		this.eventid = eventid;
+	}
 
-    public void setEventTypeID(int eventTypeID) {
-        this.eventTypeID = eventTypeID;
-    }
+	public String getEventtype() {
+		return eventtype;
+	}
 
-    public String getEventName() {
-        return eventName;
-    }
+	public void setEventtype(String eventtype) {
+		this.eventtype = eventtype;
+	}
 
-    public void setEventName(String eventName) {
-        this.eventName = eventName;
-    }
+	public String getEventname() {
+		return eventname;
+	}
 
-    public int getClientID() {
-        return clientID;
-    }
+	public void setEventname(String eventname) {
+		this.eventname = eventname;
+	}
 
-    public void setClientID(int clientID) {
-        this.clientID = clientID;
-    }
+	public Client getClient() {
+		return client;
+	}
 
-    public Date getEventTimeStamp() {
-        return eventTimeStamp;
-    }
+	public void setClient(Client client) {
+		this.client = client;
+	}
 
-    public void setEventTimeStamp(Date eventTimeStamp) {
-        this.eventTimeStamp = eventTimeStamp;
-    }
+	public Date getEventdate() {
+		return eventdate;
+	}
 
-    public String getEventDataJSON() {
-        return eventDataJSON;
-    }
+	public void setEventdate(Date eventdate) {
+		this.eventdate = eventdate;
+	}
 
-    public void setEventDataJSON(String eventDataJSON) {
-        this.eventDataJSON = eventDataJSON;
-    }
+	public String getEntityid() {
+		return entityid;
+	}
 
-    public String getEntityID() {
-        return entityID;
-    }
+	public void setEntityid(String entityid) {
+		this.entityid = entityid;
+	}
 
-    public void setEntityID(String entityID) {
-        this.entityID = entityID;
-    }
+	public String getFormsubmissionid() {
+		return formsubmissionid;
+	}
+
+	public void setFormsubmissionid(String formsubmissionid) {
+		this.formsubmissionid = formsubmissionid;
+	}
+
+	public String getEntityType() {
+		return entityType;
+	}
+
+	public void setEntityType(String entityType) {
+		this.entityType = entityType;
+	}
+
+	public Long getDuration() {
+		return duration;
+	}
+
+	public void setDuration(Long duration) {
+		this.duration = duration;
+	}
+
+	public Date getDatecreated() {
+		return datecreated;
+	}
+
+	public void setDatecreated(Date datecreated) {
+		this.datecreated = datecreated;
+	}
+
+	public String getLocationid() {
+		return locationid;
+	}
+
+	public void setLocationid(String locationid) {
+		this.locationid = locationid;
+	}
+
+	public Long getVersion() {
+		return version;
+	}
+
+	public void setVersion(Long version) {
+		this.version = version;
+	}
+	
+	
+	
+
 }

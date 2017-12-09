@@ -1,0 +1,13 @@
+com\ihsinformatics\tbreach5\service\JDBCService.class
+com\ihsinformatics\tbreach5\util\CouchDBProperties.class
+com\ihsinformatics\tbreach5\util\RestResourceURI.class
+com\ihsinformatics\tbreach5\web\ChartController.class
+com\ihsinformatics\tbreach5\web\ChartController$1.class
+com\ihsinformatics\tbreach5\web\ClientController.class
+com\ihsinformatics\tbreach5\AdditionalConfig.class
+com\ihsinformatics\tbreach5\web\ReportController.class
+com\ihsinformatics\tbreach5\model\FileInfo.class
+com\ihsinformatics\tbreach5\AdditionalConfig$1.class
+com\ihsinformatics\tbreach5\web\HomeController.class
+com\ihsinformatics\tbreach5\web\JasperEndPointController.class
+com\ihsinformatics\tbreach5\DemoApplication.class

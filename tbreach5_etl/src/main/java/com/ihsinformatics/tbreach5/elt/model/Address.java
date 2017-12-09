@@ -1,170 +1,221 @@
 package com.ihsinformatics.tbreach5.elt.model;
 
-import javax.json.Json;
-
+import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
-public class Address {
-    private int addressId;
-    private String entityID;
-    private String country;
-    private String stateProvince;
-    private String cityVillage;
-    private String countryDistrict;
-    private String subDistrict;
-    private boolean preffered;
-    private String addressType;
-    private Date startDate;
-    private Date endDate;
-    private String addressFields;
-    private String latitude;
-    private String longitude;
-    private String geopoint;
-    private String postalCode;
-    private String subTown;
-    private String town;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
-    public int getAddressId() {
-        return addressId;
-    }
+@Entity
+@Table(name = "address")
+public class Address implements Serializable{
 
-    public void setAddressId(int addressId) {
-        this.addressId = addressId;
-    }
+	@Id
+	@GeneratedValue
+	@Column(name = "addressid")
+	private int addressid;
 
-    public String getEntityID() {
-        return entityID;
-    }
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "clientid")
+	private Client client;
 
-    public void setEntityID(String entityID) {
-        this.entityID = entityID;
-    }
+	@Column(name = "country")
+	private String country;
 
-    public String getCountry() {
-        return country;
-    }
+	@Column(name = "stateprovince")
+	private String stateprovince;
 
-    public void setCountry(String country) {
-        this.country = country;
-    }
+	@Column(name = "cityvillage")
+	private String cityvillage;
 
-    public String getStateProvince() {
-        return stateProvince;
-    }
+	@Column(name = "countrydistrict")
+	private String countrydistrict;
 
-    public void setStateProvince(String stateProvince) {
-        this.stateProvince = stateProvince;
-    }
+	@Column(name = "subdistrict")
+	private String subdistrict;
 
-    public String getCityVillage() {
-        return cityVillage;
-    }
+	@Column(name = "preffered")
+	private boolean preffered;
 
-    public void setCityVillage(String cityVillage) {
-        this.cityVillage = cityVillage;
-    }
+	@Column(name = "addressType")
+	private String addressType;
 
-    public String getCountryDistrict() {
-        return countryDistrict;
-    }
+	@Column(name = "startDate")
+	private Date startDate;
 
-    public void setCountryDistrict(String countryDistrict) {
-        this.countryDistrict = countryDistrict;
-    }
+	@Column(name = "endDate")
+	private Date endDate;
 
-    public String getSubDistrict() {
-        return subDistrict;
-    }
+	@Column(name = "addressfields")
+	private String addressfields;
 
-    public void setSubDistrict(String subDistrict) {
-        this.subDistrict = subDistrict;
-    }
+	@Column(name = "latitude")
+	private String latitude;
 
-    public boolean isPreffered() {
-        return preffered;
-    }
+	@Column(name = "longitude")
+	private String longitude;
 
-    public void setPreffered(boolean preffered) {
-        this.preffered = preffered;
-    }
+	@Column(name = "geopoint")
+	private String geopoint;
 
-    public String getAddressType() {
-        return addressType;
-    }
+	@Column(name = "postalcode")
+	private String postalcode;
 
-    public void setAddressType(String addressType) {
-        this.addressType = addressType;
-    }
+	@Column(name = "subtown")
+	private String subtown;
 
-    public Date getStartDate() {
-        return startDate;
-    }
+	@Column(name = "town")
+	private String town;
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
+	public int getAddressid() {
+		return addressid;
+	}
 
-    public Date getEndDate() {
-        return endDate;
-    }
+	public void setAddressid(int addressid) {
+		this.addressid = addressid;
+	}
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
+	public Client getClient() {
+		return client;
+	}
 
-    public String getAddressFields() {
-        return addressFields;
-    }
+	public void setClient(Client client) {
+		this.client = client;
+	}
 
-    public void setAddressFields(String addressFields) {
-        this.addressFields = addressFields;
-    }
+	public String getCountry() {
+		return country;
+	}
 
-    public String getLatitude() {
-        return latitude;
-    }
+	public void setCountry(String country) {
+		this.country = country;
+	}
 
-    public void setLatitude(String latitude) {
-        this.latitude = latitude;
-    }
+	public String getStateprovince() {
+		return stateprovince;
+	}
 
-    public String getLongitude() {
-        return longitude;
-    }
+	public void setStateprovince(String stateprovince) {
+		this.stateprovince = stateprovince;
+	}
 
-    public void setLongitude(String longitude) {
-        this.longitude = longitude;
-    }
+	public String getCityvillage() {
+		return cityvillage;
+	}
 
-    public String getGeopoint() {
-        return geopoint;
-    }
+	public void setCityvillage(String cityvillage) {
+		this.cityvillage = cityvillage;
+	}
 
-    public void setGeopoint(String geopoint) {
-        this.geopoint = geopoint;
-    }
+	public String getCountrydistrict() {
+		return countrydistrict;
+	}
 
-    public String getPostalCode() {
-        return postalCode;
-    }
+	public void setCountrydistrict(String countrydistrict) {
+		this.countrydistrict = countrydistrict;
+	}
 
-    public void setPostalCode(String postalCode) {
-        this.postalCode = postalCode;
-    }
+	public String getSubdistrict() {
+		return subdistrict;
+	}
 
-    public String getSubTown() {
-        return subTown;
-    }
+	public void setSubdistrict(String subdistrict) {
+		this.subdistrict = subdistrict;
+	}
 
-    public void setSubTown(String subTown) {
-        this.subTown = subTown;
-    }
+	public boolean isPreffered() {
+		return preffered;
+	}
 
-    public String getTown() {
-        return town;
-    }
+	public void setPreffered(boolean preffered) {
+		this.preffered = preffered;
+	}
 
-    public void setTown(String town) {
-        this.town = town;
-    }
+	public String getAddressType() {
+		return addressType;
+	}
+
+	public void setAddressType(String addressType) {
+		this.addressType = addressType;
+	}
+
+	public Date getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
+
+	public Date getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
+	}
+
+	public String getAddressfields() {
+		return addressfields;
+	}
+
+	public void setAddressfields(String addressfields) {
+		this.addressfields = addressfields;
+	}
+
+	public String getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public String getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
+
+	public String getGeopoint() {
+		return geopoint;
+	}
+
+	public void setGeopoint(String geopoint) {
+		this.geopoint = geopoint;
+	}
+
+	public String getPostalcode() {
+		return postalcode;
+	}
+
+	public void setPostalcode(String postalcode) {
+		this.postalcode = postalcode;
+	}
+
+	public String getSubtown() {
+		return subtown;
+	}
+
+	public void setSubtown(String subtown) {
+		this.subtown = subtown;
+	}
+
+	public String getTown() {
+		return town;
+	}
+
+	public void setTown(String town) {
+		this.town = town;
+	}
+
 }

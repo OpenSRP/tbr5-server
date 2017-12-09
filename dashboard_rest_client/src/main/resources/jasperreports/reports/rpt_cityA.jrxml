@@ -8,7 +8,7 @@
        "deathDate", "birthDateApprox", "deathDateApprox", gender, "dateCreated", 
        "dateEdited", voided, "dateVoid", "voidReason", "serverVersion", 
        "entityID", creator, editor, void
-  FROM public."Client"]]>
+  FROM public."client"]]>
 	</queryString>
 	<field name="clientID" class="java.lang.Integer"/>
 	<field name="firstName" class="java.lang.String"/>

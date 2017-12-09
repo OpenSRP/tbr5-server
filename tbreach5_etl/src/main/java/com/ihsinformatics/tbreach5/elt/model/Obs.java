@@ -1,107 +1,156 @@
 package com.ihsinformatics.tbreach5.elt.model;
 
-
+import java.io.Serializable;
 import java.util.Date;
 
-public class Obs {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
-    private String fieldType;
-    private int obsID;
-    private int eventID;
-    private String fieldDataType;
-    private String fieldCode;
-    private String parentCode;
-    private String values;
-    private String comments;
-    private String formSubmissionField;
-    private Date date;
-    private String humanReadableValues;
+@Entity
+@Table(name = "obs")
+public class Obs implements Serializable {
 
-    public String getFieldType() {
-        return fieldType;
-    }
+	@Id
+	@GeneratedValue
+	@Column(name = "id")
+	private int id;
 
-    public void setFieldType(String fieldType) {
-        this.fieldType = fieldType;
-    }
+	@Column(name = "fieldtype")
+	private String fieldtype;
 
-    public int getObsID() {
-        return obsID;
-    }
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "eventid")
+	private Event event;
 
-    public void setObsID(int obsID) {
-        this.obsID = obsID;
-    }
+	@Column(name = "fielddatatype")
+	private String fielddatatype;
 
-    public int getEventID() {
-        return eventID;
-    }
+	@Column(name = "fieldcode")
+	private String fieldcode;
 
-    public void setEventID(int eventID) {
-        this.eventID = eventID;
-    }
+	@Column(name = "parentCode")
+	private String parentCode;
 
-    public String getFieldDataType() {
-        return fieldDataType;
-    }
+	@Column(name = "values")
+	private String values;
 
-    public void setFieldDataType(String fieldDataType) {
-        this.fieldDataType = fieldDataType;
-    }
+	@Column(name = "comments")
+	private String comments;
 
-    public String getFieldCode() {
-        return fieldCode;
-    }
+	@Column(name = "formsubmissionfield")
+	private String formsubmissionfield;
 
-    public void setFieldCode(String fieldCode) {
-        this.fieldCode = fieldCode;
-    }
+	@Column(name = "date")
+	private Date date;
 
-    public String getParentCode() {
-        return parentCode;
-    }
+	@Column(name = "humanreadablevalues")
+	private String humanreadablevalues;
+	
+	@Column(name="effectivedatetime")
+	private Date effectivedatetime;
 
-    public void setParentCode(String parentCode) {
-        this.parentCode = parentCode;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public String getValues() {
-        return values;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public void setValues(String values) {
-        this.values = values;
-    }
+	public String getFieldtype() {
+		return fieldtype;
+	}
 
-    public String getComments() {
-        return comments;
-    }
+	public void setFieldtype(String fieldtype) {
+		this.fieldtype = fieldtype;
+	}
 
-    public void setComments(String comments) {
-        this.comments = comments;
-    }
+	public Event getEvent() {
+		return event;
+	}
 
-    public String getFormSubmissionField() {
-        return formSubmissionField;
-    }
+	public void setEvent(Event event) {
+		this.event = event;
+	}
 
-    public void setFormSubmissionField(String formSubmissionField) {
-        this.formSubmissionField = formSubmissionField;
-    }
+	public String getFielddatatype() {
+		return fielddatatype;
+	}
 
-    public Date getDate() {
-        return date;
-    }
+	public void setFielddatatype(String fielddatatype) {
+		this.fielddatatype = fielddatatype;
+	}
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
+	public String getFieldcode() {
+		return fieldcode;
+	}
 
-    public String getHumanReadableValues() {
-        return humanReadableValues;
-    }
+	public void setFieldcode(String fieldcode) {
+		this.fieldcode = fieldcode;
+	}
 
-    public void setHumanReadableValues(String humanReadableValues) {
-        this.humanReadableValues = humanReadableValues;
-    }
+	public String getParentCode() {
+		return parentCode;
+	}
+
+	public void setParentCode(String parentCode) {
+		this.parentCode = parentCode;
+	}
+
+	public String getValues() {
+		return values;
+	}
+
+	public void setValues(String values) {
+		this.values = values;
+	}
+
+	public String getComments() {
+		return comments;
+	}
+
+	public void setComments(String comments) {
+		this.comments = comments;
+	}
+
+	public String getFormsubmissionfield() {
+		return formsubmissionfield;
+	}
+
+	public void setFormsubmissionfield(String formsubmissionfield) {
+		this.formsubmissionfield = formsubmissionfield;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public String getHumanreadablevalues() {
+		return humanreadablevalues;
+	}
+
+	public void setHumanreadablevalues(String humanreadablevalues) {
+		this.humanreadablevalues = humanreadablevalues;
+	}
+
+	public Date getEffectivedatetime() {
+		return effectivedatetime;
+	}
+
+	public void setEffectivedatetime(Date effectivedatetime) {
+		this.effectivedatetime = effectivedatetime;
+	}
+	
+	
+
 }

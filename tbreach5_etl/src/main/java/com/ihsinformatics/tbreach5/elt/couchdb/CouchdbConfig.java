@@ -13,11 +13,16 @@ import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.ihsinformatics.tbreach5.elt.model.Client;
 import com.ihsinformatics.tbreach5.elt.model.Identifier;
 import com.ihsinformatics.tbreach5.elt.util.HttpCall;
 
 public class CouchdbConfig {
+	
+
+
 
 	JsonArray getAllDocuments(String url) throws IOException{
 		 HttpCall httpCall =new HttpCall();

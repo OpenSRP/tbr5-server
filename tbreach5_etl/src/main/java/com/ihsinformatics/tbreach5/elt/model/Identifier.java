@@ -1,59 +1,87 @@
 package com.ihsinformatics.tbreach5.elt.model;
 
-public class Identifier {
+import java.io.Serializable;
 
-     private int identifierID;
-     private int ClientID;
-     private String identifier;
-     private String description;
-     private String entityID;
-     private String key;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
-    public String getKey() {
-        return key;
-    }
+@Entity
+@Table(name = "identifier")
+public class Identifier implements Serializable {
 
-    public void setKey(String key) {
-        this.key = key;
-    }
+	@Id
+	@GeneratedValue
+	@Column(name = "identifierid")
+	private int identifierid;
 
-    public int getIdentifierID() {
-        return identifierID;
-    }
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "clientid")
+	private Client client;
 
-    public void setIdentifierID(int identifierID) {
-        this.identifierID = identifierID;
-    }
+	@Column(name = "identifier")
+	private String identifier;
 
-    public int getClientID() {
-        return ClientID;
-    }
+	@Column(name = "description")
+	private String description;
 
-    public void setClientID(int clientID) {
-        ClientID = clientID;
-    }
+	@Column(name = "entityID")
+	private String entityID;
 
-    public String getIdentifier() {
-        return identifier;
-    }
+	@Column(name = "key")
+	private String key;
 
-    public void setIdentifier(String identifier) {
-        this.identifier = identifier;
-    }
+	public String getKey() {
+		return key;
+	}
 
-    public String getDescription() {
-        return description;
-    }
+	public void setKey(String key) {
+		this.key = key;
+	}
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+	public String getIdentifier() {
+		return identifier;
+	}
 
-    public String getEntityID() {
-        return entityID;
-    }
+	public void setIdentifier(String identifier) {
+		this.identifier = identifier;
+	}
 
-    public void setEntityID(String entityID) {
-        this.entityID = entityID;
-    }
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getEntityID() {
+		return entityID;
+	}
+
+	public void setEntityID(String entityID) {
+		this.entityID = entityID;
+	}
+
+	public int getIdentifierid() {
+		return identifierid;
+	}
+
+	public void setIdentifierid(int identifierid) {
+		this.identifierid = identifierid;
+	}
+
+	public Client getClient() {
+		return client;
+	}
+
+	public void setClient(Client client) {
+		this.client = client;
+	}
+
 }
