@@ -4,7 +4,7 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="tbreach5_etl-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/tbreach5_etl/tbreach5_etl">
+        <dependent-module archiveName="tbreach5_dwh-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/tbreach5_dwh/tbreach5_dwh">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="dashboard_rest_client"/>

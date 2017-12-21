@@ -9,8 +9,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>tbreach5_etl</module>
+        <module>tbreach5_dwh</module>
         <module>dashboard_rest_client</module>
+        <module>tbreach5_etl</module>
     </modules>
 
 </project>

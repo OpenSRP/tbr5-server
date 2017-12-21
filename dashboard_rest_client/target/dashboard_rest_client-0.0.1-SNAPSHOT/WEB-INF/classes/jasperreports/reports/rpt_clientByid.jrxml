@@ -7,11 +7,11 @@
 		<defaultValueExpression><![CDATA[$P{clientid}]]></defaultValueExpression>
 	</parameter>
 	<queryString>
-		<![CDATA[SELECT "clientID", "firstName", "middleName", "lastName", "birthDate", 
-       "deathDate", "birthDateApprox", "deathDateApprox", gender, "dateCreated", 
-       "dateEdited", voided, "dateVoid", "voidReason", "serverVersion", 
-       "entityID", creator, editor, void
-  FROM public."client"  where   "client"."clientID"  =$P{clientid}]]>
+		<![CDATA[SELECT clientid, void, birthdate, birthdateapprox, datecreated, dateedited, 
+       deathdate, deathdateapprox, entityid, firstname, gender, lastname, 
+       middlename, serverversion, voided, voidreason
+  FROM public.client;
+ where   client.clientid  =$P{clientid}]]>
 	</queryString>
 	<field name="clientID" class="java.lang.Integer"/>
 	<field name="firstName" class="java.lang.String"/>
@@ -24,13 +24,12 @@
 	<field name="gender" class="java.lang.String"/>
 	<field name="dateCreated" class="java.sql.Timestamp"/>
 	<field name="dateEdited" class="java.sql.Timestamp"/>
-	<field name="voided" class="java.lang.Boolean"/>
+
 	<field name="dateVoid" class="java.sql.Timestamp"/>
 	<field name="voidReason" class="java.lang.String"/>
 	<field name="serverVersion" class="java.lang.String"/>
 	<field name="entityID" class="java.lang.String"/>
-	<field name="creator" class="java.lang.String"/>
-	<field name="editor" class="java.lang.String"/>
+	
 	<field name="void" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>

@@ -31,7 +31,7 @@
     </dependency>
     <dependency>
         <groupId>com.ihsinformatics</groupId>
-        <artifactId>tbreach5_etl</artifactId>
+        <artifactId>tbreach5_dwh</artifactId>
         <version>${project.version}</version>
     </dependency>
 

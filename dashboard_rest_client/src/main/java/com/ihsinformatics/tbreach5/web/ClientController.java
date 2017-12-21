@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.google.gson.JsonObject;
-import com.ihsinformatics.tbreach5.elt.service.ClientService;
+import com.ihsinformatics.tbreach5.dwh.service.ClientService;
 import com.ihsinformatics.tbreach5.util.CouchDBProperties;
 import com.ihsinformatics.tbreach5.util.RestResourceURI;
 
