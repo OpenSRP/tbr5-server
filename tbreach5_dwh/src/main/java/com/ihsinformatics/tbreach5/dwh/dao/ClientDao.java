@@ -4,11 +4,12 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
 import com.ihsinformatics.tbreach5.dwh.model.Client;
-
+@Transactional
 @Repository
 public class ClientDao extends BaseDao<Client> {
 	
