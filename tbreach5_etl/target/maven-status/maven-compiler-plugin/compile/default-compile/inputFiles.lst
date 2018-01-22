@@ -3,6 +3,7 @@ C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\domain\ContactPoint.java
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\domain\Gender.java
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\util\HttpCall.java
+C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\thread\ClientRunnable.java
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\domain\BaseEntity.java
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\domain\Obs.java
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\ApplicationStart.java
@@ -11,6 +12,7 @@ C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\domain\Client.java
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\domain\Address.java
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\domain\User.java
+C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\schedular\ClientSchedular.java
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\domain\RelationShip.java
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\domain\Photo.java
 C:\Users\AHMED\Desktop\tbr5-server\tbreach5_etl\src\main\java\com\ihsinformatics\tbreach5\etl\couchdb\AllConstants.java

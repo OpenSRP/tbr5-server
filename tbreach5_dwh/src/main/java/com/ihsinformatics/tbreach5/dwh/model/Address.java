@@ -19,10 +19,10 @@ public class Address implements Serializable{
 
 	@Id
 	@GeneratedValue
-	@Column(name = "addressid")
+	@Column(name = "addressid", unique = true, nullable = false, updatable = false)
 	private int addressid;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER, optional = false)
 	@JoinColumn(name = "clientid")
 	private Client client;
 

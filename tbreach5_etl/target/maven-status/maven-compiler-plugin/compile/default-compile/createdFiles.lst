@@ -23,6 +23,7 @@ com\ihsinformatics\tbreach5\etl\domain\AddressField.class
 com\ihsinformatics\tbreach5\etl\domain\Photo.class
 com\ihsinformatics\tbreach5\etl\couchdb\AllConstants$ActivityLogConstants.class
 com\ihsinformatics\tbreach5\ApplicationStart.class
+com\ihsinformatics\tbreach5\etl\schedular\ClientSchedular.class
 com\ihsinformatics\tbreach5\etl\couchdb\AllConstants.class
 com\ihsinformatics\tbreach5\etl\domain\Obs.class
 com\ihsinformatics\tbreach5\etl\domain\ActivityLog.class
@@ -34,6 +35,7 @@ com\ihsinformatics\tbreach5\etl\couchdb\AllConstants$Client.class
 com\ihsinformatics\tbreach5\etl\couchdb\AllConstants$ReportDataParameters.class
 com\ihsinformatics\tbreach5\etl\couchdb\CouchdbMapper$Client.class
 com\ihsinformatics\tbreach5\etl\domain\BaseDataObject.class
+com\ihsinformatics\tbreach5\etl\thread\ClientRunnable.class
 com\ihsinformatics\tbreach5\etl\converter\ClientETL.class
 com\ihsinformatics\tbreach5\etl\domain\Location.class
 com\ihsinformatics\tbreach5\etl\domain\RelationShip.class

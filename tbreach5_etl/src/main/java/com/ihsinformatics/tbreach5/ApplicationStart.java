@@ -2,6 +2,7 @@ package com.ihsinformatics.tbreach5;
 
 
 import java.io.IOException;
+import java.text.ParseException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -10,6 +11,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.Component;
 
 import com.ihsinformatics.tbreach5.etl.Test;
@@ -23,13 +25,14 @@ import com.ihsinformatics.tbreach5.etl.Test;
 @SpringBootApplication
 @ComponentScan( {"com.ihsinformatics.tbreach5","com.ihsinformatics.tbreach5.etl", "com.ihsinformatics.tbreach5.dwh"})
 @Component
+@EnableScheduling
 public class ApplicationStart {
 	
 	
 	@Autowired
     private static ApplicationContext appContext;
 	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, ParseException {
 		ConfigurableApplicationContext appctx = SpringApplication.run(ApplicationStart.class, args);
 	//	CouchdbConfig cc=new CouchdbConfig();
 		//ApplicationStart as=new ApplicationStart();

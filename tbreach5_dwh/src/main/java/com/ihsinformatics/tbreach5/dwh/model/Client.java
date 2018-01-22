@@ -5,10 +5,12 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -20,8 +22,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 public class Client implements Serializable {
 
 	@Id
-	@GeneratedValue
-	@Column(name = "clientid")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "clientid", unique = true, nullable = false, updatable = false )
 	private int clientid;
 
 	@Column(name = "firstname")
@@ -47,8 +49,8 @@ public class Client implements Serializable {
 
 	@Column(name = "gender")
 	private String gender;
-
-	@Column(name = "entityid")
+	
+	@Column(name = "entityid",unique = true)
 	private String entityid;
 
 	@Column(name = "datecreated")
@@ -69,13 +71,13 @@ public class Client implements Serializable {
 	@Column(name = "serverversion")
 	private Long serverversion;
 
-	@OneToMany(fetch = FetchType.LAZY,mappedBy = "client")
+	@OneToMany(fetch = FetchType.LAZY,mappedBy = "client" ,cascade = { CascadeType.ALL,CascadeType.PERSIST,CascadeType.MERGE })
 	private List<Attribute> attributes;
 
-	@OneToMany(fetch = FetchType.LAZY,mappedBy = "client")
+	@OneToMany(fetch = FetchType.LAZY,mappedBy = "client" ,cascade = { CascadeType.ALL,CascadeType.PERSIST,CascadeType.MERGE })
 	private List<Identifier> identifiers;
 
-	@OneToMany(fetch = FetchType.LAZY,mappedBy = "client")
+	@OneToMany(fetch = FetchType.LAZY,mappedBy = "client" ,cascade = { CascadeType.ALL,CascadeType.PERSIST,CascadeType.MERGE })
 	private List<Address> addresses;
 
 	public List<Address> getAddresses() {

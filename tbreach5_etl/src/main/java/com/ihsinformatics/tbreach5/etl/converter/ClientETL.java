@@ -61,6 +61,7 @@ public class ClientETL {
 				if(couchDBAddress.getAddressFields()!=null) {
 				hibernateAddress.setAddressfields(couchDBAddress.getAddressFields().toString());
 				}
+				hibernateAddress.setClient(hibernateClient);
 				hibernateAddress.setAddressType(couchDBAddress.getAddressType());
 				hibernateAddress.setCityvillage(couchDBAddress.getCityVillage());
 				hibernateAddress.setCountry(couchDBAddress.getCountry());
@@ -81,22 +82,26 @@ public class ClientETL {
 				Identifier identifier = new Identifier();
 				identifier.setIdentifier(couchdbClient.getIdentifiers().get(key));
 				identifier.setKey(key);
+				identifier.setClient(hibernateClient);
 				identifiersList.add(identifier);
 			}
 			hibernateClient.setIdentifiers(identifiersList);
 
-	/*		List<Attribute> attributeList = new ArrayList<>();
+			List<Attribute> attributeList = new ArrayList<>();
 			for (String key : couchdbClient.getAttributes().keySet()) {
 				Attribute attribute = new Attribute();
 				attribute.setAttribute(key);
 				attribute.setValue(couchdbClient.getAttributes().get(key).toString());
-
+				attribute.setClient(hibernateClient);
 				attributeList.add(attribute);
 
 			}
 
 			hibernateClient.setAttributes(attributeList);
-			*/
+			
+			
+			
+			
 			hibertanteList.add(hibernateClient);
 
 		}

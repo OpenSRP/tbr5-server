@@ -17,10 +17,10 @@ public class Identifier implements Serializable {
 
 	@Id
 	@GeneratedValue
-	@Column(name = "identifierid")
+	@Column(name = "identifierid", unique = true, nullable = false, updatable = false)
 	private int identifierid;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER, optional = false)
 	@JoinColumn(name = "clientid")
 	private Client client;
 

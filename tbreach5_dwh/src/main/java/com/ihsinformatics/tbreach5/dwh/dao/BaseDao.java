@@ -6,8 +6,13 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Propagation;
 
+import org.springframework.transaction.annotation.Transactional;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+@Transactional(propagation= Propagation.REQUIRED, readOnly=false)
 public abstract class  BaseDao< T extends Serializable > {
 
 	 private Class< T > clazz;
