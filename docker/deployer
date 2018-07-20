@@ -1,0 +1,75 @@
+FROM ubuntu:xenial
+
+MAINTAINER  Maimoona Kausar - maimoonak <maimoona.kausar@ihsinformatics.com>
+
+RUN echo "Setting up environment"
+
+RUN cat /etc/lsb-release
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install software-properties-common -y
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends apt-utils
+
+# Install Java
+
+RUN echo "Setting up JDK"
+
+RUN \
+  echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
+  add-apt-repository -y ppa:webupd8team/java && \
+  apt-get update -y && \
+  apt-get install -y oracle-java8-installer && \
+  rm -rf /var/cache/oracle-jdk8-installer
+
+# Define commonly used JAVA_HOME variable
+ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+
+RUN java -version
+
+# Install MySQL.
+
+ENV MYSQL_MAJOR 5.7
+
+RUN echo "Setting up MySQL $MYSQL_MAJOR}"
+
+# add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
+RUN groupadd -r mysql && useradd -r -g mysql mysql
+
+
+# the "/var/lib/mysql" stuff here is because the mysql-server postinst doesn't have an explicit way to disable the mysql_install_db codepath besides having a database already "configured" (ie, stuff in /var/lib/mysql/mysql)
+# also, we set debconf keys to make APT a little quieter
+
+RUN export DEBIAN_FRONTEND="noninteractive" && { \
+		echo mysql-community-server mysql-community-server/data-dir select ''; \
+		echo mysql-community-server mysql-community-server/root-pass password 'root'; \
+		echo mysql-community-server mysql-community-server/re-root-pass password 'root'; \
+		echo mysql-community-server mysql-community-server/remove-test-db select false; \
+	} | debconf-set-selections && \
+	apt-get update && apt-get install -y mysql-server-${MYSQL_MAJOR} && \
+	rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld && \
+	usermod -d /var/lib/mysql/ mysql && \
+	chown -R mysql:mysql /var/lib/mysql /var/run/mysqld && \
+# ensure that /var/run/mysqld (used for socket and lock files) is writable regardless of the UID our mysqld instance ends up having at runtime
+	chmod 777 /var/run/mysqld && \
+# comment out a few problematic configuration values
+	find /etc/mysql/ -name '*.cnf' -print0 \
+		| xargs -0 grep -lZE '^(bind-address|log)' \
+		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' \
+# don't reverse lookup hostnames, they are usually another container
+	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
+
+# Define mountable directories.
+VOLUME ["/etc/mysql", "/var/lib/mysql"]
+
+# Expose ports.
+EXPOSE 3306
+
+
+
+# ==================================================================
+#  rm -rf /var/lib/apt/lists/* && \
+
+
+# Define working directory.
+WORKDIR /data
+
+RUN echo "I M MK"

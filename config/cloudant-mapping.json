@@ -1,0 +1,7 @@
+{
+	"databases": ["opensrp_tbreach", "opensrp-form"],
+	"view_mappings":[
+		{"database":"", "view":""}
+	]
+	
+}

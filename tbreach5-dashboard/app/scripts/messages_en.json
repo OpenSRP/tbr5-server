@@ -1,0 +1,56 @@
+[
+{"tbreach5.title": "TB eLIMS"},
+{"tbreach5.refapp.title": "TB eLIMS Application"},
+
+{"tbreach5.login.title": "Login"},
+{"tbreach5.login.loginHeading": "Login"},
+{"tbreach5.login.username": "Username"},
+{"tbreach5.login.password": "Password"},
+{"tbreach5.login.username.placeholder": "Enter your username"},
+{"tbreach5.login.password.placeholder": "Enter your password"},
+{"tbreach5.login.button": "Log In"},
+{"tbreach5.login.sessionLocation": "Location for this session"},
+{"tbreach5.login.cannotLogin": "Forgot password?"},
+{"tbreach5.login.cannotLoginInstructions": "Please contact your System Administrator."},
+{"tbreach5.login.cannotLogin.error.usernameMissing": "Username not specified"},
+{"tbreach5.login.cannotLogin.error.usernameInvalid": "Invalid username"},
+
+{"tbreach5.home.title": "Home"},
+{"tbreach5.home.currentUser": "Logged in as {0}, at {1},."},
+{"tbreach5.home.logIn": "Log In"},
+
+{"tbreach5.homepageExt.description": "Allows modules/apps to add links to the home page"},
+
+{"tbreach5.okay": "Okay"},
+{"tbreach5.submit": "Submit"},
+{"tbreach5.cancel": "Cancel"},
+{"tbreach5.date": "Date"},
+
+{"tbreach5.navigation.patientList": "Patients List"},
+{"tbreach5.navigation.labList": "Labs List"},
+{"tbreach5.navigation.roleList": "Roles List"},
+{"tbreach5.navigation.userAccessControl": "Access Control"},
+{"tbreach5.navigation.userList": "Users List"},
+{"tbreach5.navigation.reportList": "Reports"},
+
+{"tbreach5.stateProvince.label": "Division"},
+{"tbreach5.countyDistrict.label": "District"},
+{"tbreach5.cityVillage.label": "Upazilla"},
+{"tbreach5.address3.label": "Union"},
+{"tbreach5.lab.label": "Lab"},
+
+{"tbreach5.role.label": "Role"},
+{"tbreach5.user.query.label": "Enter name or ID"},
+
+{"tbreach5.data-list.filter.watermark1.label": "No data available for given search filter"},
+{"tbreach5.data-list.filter.watermark2.label": "Add atleast one search filter to fetch data"},
+
+{"tbreach5.error.login.fail": "Invalid username/password. Please try again."},
+{"tbreach5.error.loadApps.fail": "An error occurred while loading apps"},
+{"tbreach5.login.error.invalidLocation": "Not allowed to log in at location {0},"},
+{"tbreach5.login.error.locationRequired": "You must choose a location!"},
+{"tbreach5.app.errors.invalidJson": "Invalid Json"},
+{"tbreach5.app.errors.serverError": "An error occurred while communicating with the server"},
+{"tbreach5.app.errors.IdsShouldMatch": "The App ID should match the one in the definition"},
+{"tbreach5.app.errors.duplicateAppId": "Duplicate App ID"}
+]

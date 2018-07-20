@@ -1,0 +1,59 @@
+<h1 class="heading" translate>tbreach5.lab-profile.label</h1>
+<br>
+<table ng-controller="LabController">
+  <tr>
+    <td colspan="3">
+    	<div ng-show="voidToggle">
+			<input type="text" placeholder='{{ "tbreach5.lab-void.reason.label" | translate }}' ng-model="voidReason"/>
+	    	<button ng-click="voidProfile(dataMap.location);" class="btn btn-danger" translate> tbreach5.okay </button>
+    	</div>
+    </td>
+    <td>
+    	<button ng-model="voidToggle" ng-click="voidToggle = !voidToggle" class="btn btn-danger" 
+    			ng-hide="dataMap.location.retired">
+	    			<span ng-show="!voidToggle" translate > tbreach5.lab-void.trigger.label</span>
+	    			<span ng-show="voidToggle" translate > tbreach5.cancel </span></button>
+    	<button ng-click="editProfile(dataMap.location);" class="btn btn-warning" ng-hide="dataMap.location.retired" translate > tbreach5.lab-edit.trigger.label</button>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td translate > tbreach5.lab-profile.label.labType </td>
+	<td> {{ dataMap.location.labType }} </td>
+	<td></td>
+    <td translate > tbreach5.lab-profile.label.registrationDate </td>
+    <td> {{ dataMap.location.registrationDate | date:'dd-MMM-yyyy' }} </td>
+  </tr>
+  <tr>
+    <td translate > tbreach5.lab-profile.label.labName </td>
+    <td colspan="2"> {{ dataMap.location.name }} </td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td translate > tbreach5.lab-profile.label.labAddress </td>
+    <td colspan="4">
+    	<div class="squeeze" style="border: thin dashed silver;"> {{ dataMap.location.stateProvince }} </div>
+    	<div class="squeeze" style="border: thin dashed silver;"> {{ dataMap.location.countyDistrict }} </div>
+    	<div class="squeeze" style="border: thin dashed silver;"> {{ dataMap.location.cityVillage }} </div>
+    	<div class="squeeze" style="border: thin dashed silver;"> {{ dataMap.location.address3 }} </div>
+    </td>
+  </tr>
+  <tr>
+    <td translate > tbreach5.lab-profile.label.organizationType </td>
+  	<td> {{ dataMap.location.organizationType }} </td>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td translate > tbreach5.lab-profile.label.organizationName </td>
+  	<td colspan="2"> {{ dataMap.location.organizationName }} </td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td translate > tbreach5.lab-profile.label.labIdentifier </td>
+    <td colspan="4"> {{ dataMap.location.identifier }} </td>
+  </tr>
+  <tr ng-show="dataMap.location.retired">
+    <td><span style="color: red" translate > tbreach5.lab-voided.label</span></td>
+    <td colspan="4"> ( {{ dataMap.location.auditInfo.dateRetired | date:'dd-MMM-yyyy'}} ) {{ dataMap.location.auditInfo.retireReason }} </td>
+  </tr>
+</table>

@@ -1,0 +1,27 @@
+document	table	property	column				
+Client	client	_id	_id				
+Client	client	baseEntityId	baseentityid				
+Client	client	creator	creator				
+Client	client	dateCreated	datecreated				
+Client	client	editor	editor				
+Client	client	dateEdited	dateedited				
+Client	client	voided	voided				
+Client	client	dateVoided	datevoided				
+Client	client	voider	voider				
+Client	client	voidReason	voidreason				
+Client	client	serverVersion	serverversion				
+Client	client	attributes	attributes				
+Client	client	identifiers	identifiers				
+Client	client	addresses					
+Client	client	contactPoints					
+Client	client	photos					
+Client	client	firstName	firstname				
+Client	client	middleName	middlename				
+Client	client	lastName	lastname				
+Client	client	birthdate	birthdate				
+Client	client	birthdateApprox	birthdateapprox				
+Client	client	deathdate	deathdate				
+Client	client	deathdateApprox	deathdateapprox				
+Client	client	gender	gender				
+Client	client	clientType	clienttype				
+Client	client	relationships	relationships				

@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ihsinformatics.tbreach5</groupId>
+		<artifactId>tbreach5</artifactId>
+		<version>0.0.1a</version>
+	</parent>
+	<artifactId>tbreach5-web</artifactId>
+	<packaging>war</packaging>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <start-class>com.ihsinformatics.tbreach5.etl.EntryPointWebApp</start-class>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.ihsinformatics.tbreach5</groupId>
+			<artifactId>tbreach5-dwh</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ihsinformatics.tbreach5</groupId>
+			<artifactId>tbreach5-etl</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.codehaus.plexus</groupId>
+		    <artifactId>plexus-utils</artifactId>
+		    <version>3.1.0</version>
+		</dependency>
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!-- marked the embedded servlet container as provided -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>tbreach5</finalName>
+		<resources>
+			<resource>
+				<directory>../config</directory>
+				<!-- <excludes>
+					<exclude>**/metabase.jar</exclude>
+				</excludes> -->
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>	
+			<plugin>
+			    <artifactId>maven-resources-plugin</artifactId>
+			    <executions>
+			        <execution>
+			            <id>copy-resources</id>
+			            <phase>validate</phase>
+			            <goals>
+			                <goal>copy-resources</goal>
+			            </goals>
+			            <configuration>
+			                <outputDirectory>target/tbreach5/</outputDirectory>
+			                <resources>
+			                    <resource>
+			                        <directory>${project.parent.basedir}/tbreach5-dashboard/app/</directory>
+			                    </resource>
+			                </resources>
+			            </configuration>
+			        </execution>
+			    </executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

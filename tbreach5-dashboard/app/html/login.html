@@ -1,0 +1,60 @@
+<div>
+    <div id="login-form">
+        <form method="post" autocomplete="off">
+			<img align="middle" alt="" src="images/tbreachlogo.jpg" width="400px" height="auto">
+            <fieldset id="login_container">
+                <legend>
+                    <i class="icon-lock small"></i><span translate>tbreach5.login.loginHeading</span>
+                </legend>
+				<div id="validationErrorAlert" class="alert alert-danger ng-hide" ng-show="formErrors" role="alert">
+					<div>{{ formErrors }}</div>
+				</div>
+				<section>
+	                <div>
+	                    <!-- <label for="username">{{ msgs["tbreach5.login.username"] }}:</label> -->
+	                    <input title='{{ msgs["tbreach5.login.username.placeholder"] }}' ng-model="username" type="text" name="username" autofocus="autofocus" required 
+							placeholder='{{ "tbreach5.login.username.placeholder" | translate }}' />
+	                </div>
+	
+	                <div>
+	                    <!-- <label for="password">{{ msgs["tbreach5.login.password"] }}:</label> -->
+	                    <input title='{{ msgs["tbreach5.login.password.placeholder"] }}' ng-model="password" type="password" name="password" required 
+							placeholder='{{ "tbreach5.login.password.placeholder" | translate }}'/>
+	                </div>
+                </section>
+				<section>
+					<button class="btn btn-success btn-lg btn-block" ng-click="login()"  translate>tbreach5.login.button</button>
+					
+					<br><br>
+			       <!--  <a id="cantLogin" href="javascript:void(0)" 
+			        	onclick="jQuery('#forgot_pwd_container').show(); jQuery('login_container').hide(); " class="pull-right">
+                    <i class="icon-question-sign small"></i> <span translate>tbreach5.login.cannotLogin</span>
+                    </a> -->
+				</section>
+            </fieldset>
+            <fieldset id="forgot_pwd_container" style="display: none;">
+                <legend>
+                    <i class="icon-lock small"></i><span translate>tbreach5.login.cannotLogin</span>
+                </legend>
+				<div id="validationErrorAlert" class="alert alert-danger ng-hide" ng-show="formErrors" role="alert">
+					<div>{{ formErrors }}</div>
+				</div>
+				<section>
+	                <div>
+	                    <input title='{{ "tbreach5.login.username.placeholder" | translate }}' ng-model="fg_username" type="text" name="fg_username" autofocus="autofocus" required 
+							placeholder='{{ "tbreach5.login.username.placeholder" | translate }}' />
+	                </div>
+                </section>
+				<section>
+					<button class="btn btn-success btn-lg btn-block" ng-click="forgotPassword()" translate>tbreach5.submit</button>
+					<button class="btn btn-secondary btn-lg btn-block" 
+						onclick="jQuery('#forgot_pwd_container').hide(); jQuery('login_container').show(); " translate>tbreach5.cancel</button>
+				</section>
+            </fieldset>
+
+            <input type="hidden" name="redirectUrl" value="${redirectUrl}" />
+
+        </form>
+
+    </div>
+</div>

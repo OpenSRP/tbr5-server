@@ -1,0 +1,73 @@
+version: "3"
+services:
+     
+  postgres:
+    image: postgres:9.5
+    restart: always
+    env_file: .env.production
+    ports: 
+      - "5433:5432"
+    volumes: 
+      - /var/lib/postgresql/data
+      - ./postgres/db:/docker-entrypoint-initdb.d
+  
+  mysql:
+    image: mysql:5.7
+    restart: always
+    env_file: .env.production
+    ports:
+     - "3307:3306"
+    volumes:
+     - /var/lib/mysql
+     - ./mysql:/docker-entrypoint-initdb.d    
+  
+  couchdb:
+    image: couchdb:2.1
+    restart: always
+    env_file: .env.production
+    ports:
+      - "5985:5984"
+    volumes:
+      - ./couchdb:/opt/couchdb/etc/local.d
+      - /opt/couchdb/data
+      - /opt/couchdb/etc
+      
+  activemq:
+    image: webcenter/activemq:5.14.3
+    ports:
+      # mqtt
+      - "1883:1883"
+      # amqp
+      - "5672:5672"
+      # ui
+      - "8161:8161"
+      # stomp
+      - "61613:61613"
+      # ws
+      - "61614:61614"
+      # jms
+      - "61616:61616"
+    volumes: ["/opt/activemq/conf", "/data/activemq", "/var/log/activemq"]
+    env_file: .env.production
+      
+  metabase:
+    image: metabase/metabase:v0.27.2
+    depends_on:
+      - postgres
+    ports: 
+      - "3000:3000"
+    env_file: .env.production
+
+  web:
+    build: .
+    depends_on:
+      - postgres
+      - mysql
+      - couchdb
+      - activemq
+      - metabase
+    ports:
+     - "8080:8080"
+    volumes:
+     - /usr/local/tomcat/
+     - /root/.OpenMRS

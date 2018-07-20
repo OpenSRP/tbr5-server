@@ -1,0 +1,179 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="maimoonak" id="1523357634507-1">
+        <createSequence sequenceName="hibernate_sequence"/>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-2">
+        <createTable tableName="address">
+            <column name="addressid" type="INTEGER" autoIncrement="true">
+                <constraints primaryKey="true" primaryKeyName="address_pkey"/>
+            </column>
+            <column name="addresstype" type="VARCHAR(255)"/>
+            <column name="addressfields" type="JSONB"/>
+            <column name="country" type="VARCHAR(255)"/>
+            <column name="stateprovince" type="VARCHAR(255)"/>
+            <column name="cityvillage" type="VARCHAR(255)"/>
+            <column name="countydistrict" type="VARCHAR(255)"/>
+            <column name="subdistrict" type="VARCHAR(255)"/>
+            <column name="town" type="VARCHAR(255)"/>
+            <column name="subtown" type="VARCHAR(255)"/>
+            <column name="geopoint" type="VARCHAR(255)"/>
+            <column name="latitude" type="VARCHAR(255)"/>
+            <column name="longitude" type="VARCHAR(255)"/>
+            <column name="postalcode" type="VARCHAR(255)"/>
+            <column name="preferred" type="BOOLEAN"/>
+            <column name="startdate" type="TIMESTAMP"/>
+            <column name="enddate" type="TIMESTAMP"/>     
+			
+            <column name="baseentityid" type="VARCHAR(255)"/>
+            <column name="_id" type="VARCHAR(255)"/>
+            <column name="clientid" type="INTEGER"/>
+
+            <column name="fulldetails" type="JSONB"/>
+		</createTable>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-4">
+        <createTable tableName="client">
+            <column name="clientid" type="INTEGER" autoIncrement="true">
+                <constraints primaryKey="true" primaryKeyName="client_pkey"/>
+            </column>
+            <column name="_id" type="VARCHAR(255)"/>
+            <column name="baseentityid" type="VARCHAR(255)"/>
+			
+            <column name="attributes" type="JSONB"/>
+            <column name="identifiers" type="JSONB"/>
+            <column name="addresses" type="JSONB"/>
+            <column name="firstname" type="VARCHAR(255)"/>
+            <column name="middlename" type="VARCHAR(255)"/>
+            <column name="lastname" type="VARCHAR(255)"/>
+            <column name="gender" type="VARCHAR(255)"/>
+            <column name="birthdate" type="TIMESTAMP"/>
+            <column name="birthdateapprox" type="BOOLEAN"/>
+            <column name="deathdate" type="TIMESTAMP"/>
+            <column name="deathdateapprox" type="BOOLEAN"/>
+            <column name="relationships" type="JSONB"/>
+            <column name="clienttype" type="VARCHAR(255)"/>
+
+            <column name="datecreated" type="TIMESTAMP"/>
+            <column name="dateedited" type="TIMESTAMP"/>
+            <column name="voided" type="BOOLEAN"/>
+			<column name="dateVoided" type="BOOLEAN"/>
+            <column name="voidreason" type="VARCHAR(255)"/>
+            <column name="creator" type="VARCHAR(255)"/>
+            <column name="editor" type="VARCHAR(255)"/>
+            <column name="voider" type="VARCHAR(255)"/>
+            <column name="serverversion" type="BIGINT"/>
+			
+            <column name="fulldetails" type="JSONB"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-5">
+        <createTable tableName="contactpoint">
+            <column name="contactpointid" type="INTEGER" autoIncrement="true">
+                <constraints primaryKey="true" primaryKeyName="contactpoint_pkey"/>
+            </column>
+			<column name="_id" type="VARCHAR(255)"/>
+            <column name="baseentityid" type="VARCHAR(255)"/>
+            <column name="clientid" type="INTEGER"/>
+
+            <column name="number" type="VARCHAR(255)"/>
+            <column name="preference" type="INTEGER"/>
+            <column name="startdate" type="TIMESTAMP"/>
+            <column name="enddate" type="TIMESTAMP"/>
+            <column name="type" type="VARCHAR(255)"/>
+            <column name="use" type="VARCHAR(255)"/>
+			
+			<column name="fulldetails" type="JSONB"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-6">
+        <createTable tableName="event">
+            <column name="eventid" type="INTEGER" autoIncrement="true">
+                <constraints primaryKey="true" primaryKeyName="event_pkey"/>
+            </column>
+            <column name="identifiers" type="JSONB"/>
+            <column name="duration" type="INTEGER"/>
+            <column name="entitytype" type="VARCHAR(255)"/>
+            <column name="eventdate" type="TIMESTAMP"/>
+            <column name="eventtype" type="VARCHAR(255)"/>
+            <column name="formsubmissionid" type="VARCHAR(255)"/>
+            <column name="locationid" type="VARCHAR(255)"/>
+            <column name="providerid" type="VARCHAR(255)"/>
+            <column name="teamid" type="VARCHAR(255)"/>
+            <column name="status" type="VARCHAR(255)"/>
+            <column name="category" type="VARCHAR(255)"/>
+            <column name="reason" type="VARCHAR(255)"/>
+            <column name="details" type="JSONB"/>
+            <column name="obs" type="JSONB"/>
+
+			<column name="datecreated" type="TIMESTAMP"/>
+            <column name="dateedited" type="TIMESTAMP"/>
+            <column name="voided" type="BOOLEAN"/>
+			<column name="dateVoided" type="BOOLEAN"/>
+            <column name="voidreason" type="VARCHAR(255)"/>
+            <column name="creator" type="VARCHAR(255)"/>
+            <column name="editor" type="VARCHAR(255)"/>
+            <column name="voider" type="VARCHAR(255)"/>
+            <column name="serverversion" type="BIGINT"/>
+			
+            <column name="_id" type="VARCHAR(255)"/>
+            <column name="baseentityid" type="VARCHAR(255)"/>
+            <column name="clientid" type="INTEGER"/>
+			
+			<column name="fulldetails" type="JSONB"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-9">
+        <createTable tableName="obs">
+            <column name="obsid" type="INTEGER" autoIncrement="true">
+                <constraints primaryKey="true" primaryKeyName="obs_pkey"/>
+            </column>
+            <column name="comments" type="VARCHAR(255)"/>
+            <column name="effectivedatetime" type="TIMESTAMP"/>
+            <column name="parentcode" type="VARCHAR(255)"/>
+            <column name="fieldcode" type="VARCHAR(255)"/>
+            <column name="fielddatatype" type="VARCHAR(255)"/>
+            <column name="fieldtype" type="VARCHAR(255)"/>
+            <column name="formsubmissionfield" type="VARCHAR(255)"/>
+            <column name="humanreadablevalues" type="JSONB"/>
+            <column name="values" type="JSONB"/>
+			
+            <column name="eventid" type="INTEGER"/>
+            <column name="baseentityid" type="VARCHAR(255)"/>
+            <column name="_id" type="VARCHAR(255)"/>
+
+			<column name="fulldetails" type="JSONB"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-10">
+        <addUniqueConstraint columnNames="baseentityid" constraintName="uk_jedm810k3mr809tydagqrd6bb" tableName="client"/>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-11">
+        <addForeignKeyConstraint baseColumnNames="eventid" baseTableName="obs" constraintName="fk1i3vqhfqx0xt9cp10it0knc8t" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="eventid" referencedTableName="event" validate="true"/>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-12">
+        <addForeignKeyConstraint baseColumnNames="clientid" baseTableName="address" constraintName="fk3qu6x15w6s9oe2gw306by024t" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="clientid" referencedTableName="client" validate="true"/>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-15">
+        <addForeignKeyConstraint baseColumnNames="clientid" baseTableName="contactpoint" constraintName="fkdubnm3lf6js3w9yaywhrw8a1t" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="clientid" referencedTableName="client" validate="true"/>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-16">
+        <addForeignKeyConstraint baseColumnNames="clientid" baseTableName="event" constraintName="fkjrmq4wkan6acv33h6phbhjdo7" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="clientid" referencedTableName="client" validate="true"/>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-17">
+        <createTable tableName="statetoken">
+        	<column name="statetokenid" type="INTEGER" autoIncrement="true">
+                <constraints primaryKey="true" primaryKeyName="statetoken_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="datecreated" type="TIMESTAMP"/>
+            <column name="dateedited" type="TIMESTAMP"/>
+            <column name="value" type="VARCHAR(255)"/>
+			
+			<column name="fulldetails" type="JSONB"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="maimoonak" id="1523357634507-18">
+        <addUniqueConstraint columnNames="_id" constraintName="uk_jedm810k3mr809tydafdjfdjfjd" tableName="event"/>
+    </changeSet>
+</databaseChangeLog>

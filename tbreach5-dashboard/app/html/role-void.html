@@ -1,0 +1,16 @@
+<h1><span translate > tbreach5.role-void.label</span> '{{ role.name }}'</h1>
+<form ng-submit="submitForm()">
+<table>
+	<tr>
+		<td colspan="2" ng-show="!error" translate > tbreach5.role-void.confirmation.label</td>
+		<td colspan="2" ng-show="error" translate > tbreach5.role-void.failed.label</td>
+	</tr>
+	<tr>
+		<td></td>
+	  	<td><button ng-show="!error" type="button" ng-click="cancel();" class="btn btn-danger" translate > tbreach5.cancel</button>
+	  		<button ng-show="!error" type="submit" name="submit" class="btn btn-success" translate > tbreach5.submit</button>
+	  		<button ng-show="error" type="button" ng-click="cancel();" class="btn btn-warning" translate > tbreach5.okay</button>
+	  	</td>
+	</tr>
+</table>
+</form>

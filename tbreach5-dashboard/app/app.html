@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="content-loading">
+	<head>
+		<title>TB REACH5</title>
+		<link rel="shortcut icon" type="image/ico" href="images/tbreachlogo.jpg"/>
+		<link rel="icon" type="image/png\" href="images/tbreachlogo.jpg"/>
+
+		<link rel="stylesheet" href="styles/style.css">
+	</head>
+	<body>
+		<link href="styles/ui-bootstrap-3.3.7.min.css" rel="stylesheet">
+	
+		<script type="text/javascript">
+			var OPENMRS_CONTEXT_PATH = 'openmrs';
+		</script>
+		<script>
+			/* if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/openmrs/service-worker.js', { scope: "/openmrs/" })
+				.then(function(reg) {
+				  console.info('Registration succeeded. Scope is ' + reg.scope);
+				}).catch(function(error) {
+				  console.error('Registration failed with ' + error);
+				});
+			}
+			else {
+				alert('Offline mode is disabled or not supported by your browser');
+			} */
+		</script>			
+	<script type="text/javascript" src="scripts/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="scripts/angular.js"></script>
+	<script type="text/javascript" src="scripts/angular-common.js"></script>
+	<script type="text/javascript" src="scripts/angular-resource.min.js"></script>
+	<script type="text/javascript" src="scripts/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="scripts/angular-base64.min.js"></script>
+	<script type="text/javascript" src="scripts/angular-translate.min.js"></script>
+	<script type="text/javascript" src="scripts/angular-translate-loader-url.min.js"></script>
+	
+	<script type="text/javascript" src="scripts/ui-grid.min.js"></script>
+	
+	<script type="text/javascript" src="scripts/angular-ui-tree.min.js"></script>
+	
+	<script type="text/javascript" src="scripts/es6-promise.auto.min.js"></script>
+	<script type="text/javascript" src="scripts/jspdf.min.js"></script>
+	<script type="text/javascript" src="scripts/html2canvas.min.js"></script>
+	<script type="text/javascript" src="scripts/html2pdf.min.js"></script>
+
+	<script type="text/javascript" src="scripts/services/session.js"></script>
+	<script type="text/javascript" src="scripts/services/patientService.js"></script>
+	<script type="text/javascript" src="scripts/services/encounterService.js"></script>
+	<script type="text/javascript" src="scripts/services/locationService.js"></script>
+	<script type="text/javascript" src="scripts/services/reportService.js"></script>
+	<script type="text/javascript" src="scripts/services/roleService.js"></script>
+	<script type="text/javascript" src="scripts/services/userService.js"></script>
+	<script type="text/javascript" src="scripts/services/privilegeService.js"></script>
+	<script type="text/javascript" src="scripts/services/personAttributeTypeService.js"></script>
+	
+	
+	<script type="text/javascript" src="scripts/app.authorization.js"></script>
+	<script type="text/javascript" src="scripts/app.patient.js"></script>
+	<script type="text/javascript" src="scripts/app.location.js"></script>
+	<script type="text/javascript" src="scripts/app.report.js"></script>
+	<script type="text/javascript" src="scripts/app.lab.js"></script>
+	<script type="text/javascript" src="scripts/app.role.js"></script>
+	<script type="text/javascript" src="scripts/app.user.js"></script>
+	<script type="text/javascript" src="scripts/filter.person.js"></script>
+	<script type="text/javascript" src="scripts/filter.encounter.js"></script>
+	<script type="text/javascript" src="scripts/filter.location.js"></script>
+	
+	<script type="text/javascript" src="scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
+
+<script>
+
+jQuery( document ).ready(function() {
+	jQuery("link[href*='referenceapplication.css']").remove();
+});
+
+</script>
+
+<div ng-app="app.tbreach5">
+
+<style>
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+</style>
+
+<header>
+<div class="logo"><img ng-if="('login' | isState) ? false : true" src="images/tbreachlogo.jpg"></div>
+<div class="user-options">
+<!-- Loading locations of type division and district to make sure these are already available in pages when rendered -->
+	<li ng-controller="LocationController" ng-if="!('login' | isState)" ng-init="loadLocations(true, ['division','district'])">
+
+	</li>
+	<li ng-controller="LogoutController">
+		<a ng-if="('login' | isState) ? false : true" ng-click="logout()">
+			Logout <i class="icon-signout small"></i>
+		</a>
+	</li>
+	<li><select ng-model="locale" ng-change="changeLanguage(locale);">
+			<option>en</option>
+			<option>de</option>
+		</select>
+	</li>
+</div>
+</li>
+</header>
+
+<div class="sidebar" ng-include="('login' | isState) ? null : 'html/navigation.html'"></div>
+
+<div class="body-wrapper">
+	<div ui-view></div>
+</div>
+
+</div>
+
+</body>
+</html>

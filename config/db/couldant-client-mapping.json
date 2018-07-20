@@ -1,0 +1,32 @@
+{
+	"reference_table": ["client", "address"],
+	"data_mapping" : [
+		{"source": "_id", "reference_column": "_id"}, 
+		{"source": "baseEntityId", "reference_column": "baseentityid"}, 
+		{"source": "creator", "reference_column": "creator"}, 
+		{"source": "dateCreated", "reference_column": "datecreated"}, 
+		{"source": "editor", "reference_column": "editor"}, 
+		{"source": "dateEdited", "reference_column": "dateedited"}, 
+		{"source": "voided", "reference_column": "voided"}, 
+		{"source": "dateVoided", "reference_column": "datevoided"}, 
+		{"source": "voider", "reference_column": "voider"}, 
+		{"source": "voidReason", "reference_column": "voidreason"}, 
+		{"source": "serverVersion", "reference_column": "serverversion"}, 
+		{"source": "attributes", "reference_column": "attributes"}, 
+		{"source": "identifiers", "reference_column": "identifiers"}, 
+		{"source": "addresses", "reference_column": "addresses"}, 
+		{"source": "contactPoints", "reference_column": ""}, 
+		{"source": "photos", "reference_column": ""}, 
+		{"source": "firstName", "reference_column": "firstname"}, 
+		{"source": "middleName", "reference_column": "middlename"}, 
+		{"source": "lastName", "reference_column": "lastname"}, 
+		{"source": "birthdate", "reference_column": "birthdate"}, 
+		{"source": "birthdateApprox", "reference_column": "birthdateapprox"}, 
+		{"source": "deathdate", "reference_column": "deathdate"}, 
+		{"source": "deathdateApprox", "reference_column": "deathdateapprox"}, 
+		{"source": "gender", "reference_column": "gender"}, 
+		{"source": "clientType", "reference_column": "clienttype"}, 
+		{"source": "relationships", "reference_column": "relationships"}
+		
+	]
+}

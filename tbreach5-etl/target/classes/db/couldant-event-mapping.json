@@ -1,0 +1,31 @@
+{
+	"reference_table": ["event", "obs", "client"],
+	"data_mapping" : [
+		{"source": "_id", "reference_column": "_id"}, 
+		{"source": "baseEntityId", "reference_column": "baseentityid"}, 
+		{"source": "creator", "reference_column": "creator"}, 
+		{"source": "dateCreated", "reference_column": "datecreated"}, 
+		{"source": "editor", "reference_column": "editor"}, 
+		{"source": "dateEdited", "reference_column": "dateedited"}, 
+		{"source": "voided", "reference_column": "voided"}, 
+		{"source": "dateVoided", "reference_column": "datevoided"}, 
+		{"source": "voider", "reference_column": "voider"}, 
+		{"source": "voidReason", "reference_column": "voidreason"}, 
+		{"source": "version", "reference_column": "serverversion"}, 
+		{"source": "identifiers", "reference_column": "identifiers"}, 
+		{"source": "locationId", "reference_column": "locationid"}, 
+		{"source": "eventDate", "reference_column": "eventdate"}, 
+		{"source": "photos", "reference_column": ""}, 
+		{"source": "eventType", "reference_column": "eventtype"}, 
+		{"source": "entityType", "reference_column": "entitytype"}, 
+		{"source": "formSubmissionId", "reference_column": "formsubmissionid"}, 
+		{"source": "providerId", "reference_column": "providerid"}, 
+		{"source": "teamId", "reference_column": "teamid"}, 
+		{"source": "status", "reference_column": "status"}, 
+		{"source": "category", "reference_column": "category"}, 
+		{"source": "reason", "reference_column": "reason"}, 
+		{"source": "obs", "reference_column": "obs"}, 
+		{"source": "details", "reference_column": "details"}
+		
+	]
+}

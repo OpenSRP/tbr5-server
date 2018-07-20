@@ -1,0 +1,56 @@
+<style>
+
+</style>
+
+<div class="form" ng-controller="UserController" >
+
+<h1 class="heading"> <span translate > tbreach5.user-list.label</span>
+<button class="btn btn-success right" ng-click="registerProfile();" translate > tbreach5.user-registration.trigger.label</button></h1>
+
+<table ng-controller="LocationController" class="noborder">
+<tr>
+<td>
+	<select ng-model="searchFilter.stateProvince">
+		<option value="" translate > tbreach5.stateProvince.label</option>
+		<option ng-repeat="loc in divisions" value="{{ loc.name }}">{{ loc.address6 || loc.name }}</option>
+	</select>
+</td>
+<td>
+	<select ng-model="searchFilter.countyDistrict" ng-change="fetchScopeLocations('upazilla', 'upazillas', searchFilter.countyDistrict, 'loadingData');">
+		<option value="" translate > tbreach5.countyDistrict.label</option>
+		<option ng-if="searchFilter.stateProvince" ng-repeat="loc in districts | filter: { parentLocation: { name: searchFilter.stateProvince} }" value="{{ loc.name }}">{{ loc.address6 || loc.name }}</option>
+	</select>
+</td>
+<td>
+	<select ng-model="searchFilter.cityVillage">
+		<option value="" translate > tbreach5.cityVillage.label</option>
+		<option ng-if="searchFilter.countyDistrict" ng-repeat="loc in upazillas | filter: { parentLocation: { name: searchFilter.countyDistrict} }" value="{{ loc.name }}">{{ loc.address6 || loc.name }}</option>
+	</select>
+	<i class="icon-refresh small" ng-show="loadingData||!divisions||!districts"></i>
+</td>
+<td>
+	<select ng-model="searchFilter.role">
+		<option value="" translate > tbreach5.role.label</option>
+			<option ng-repeat="role in roles" value="{{ role.name }}">{{ role.name }}</option>
+	</select>
+</td>
+<td>
+	<input ng-model="searchFilter.q" class="inline" placeholder='{{ "tbreach5.user-list.filter.q.label" | translate }}'>
+</td>
+<td>	<button type="button" ng-click="loadLabs()" class="btn btn-secondary" translate >tbreach5.user-list.filter.trigger.label</button></td>
+</tr>
+</table>
+
+<div ui-grid="usersList"  ui-grid-pagination ui-grid-auto-resize style="height: {{gridHeight}}" ng-class="loadingList ? 'loader' : ''">
+    <div class="watermark" ng-show="searchFilter && !usersList.data.length" translate > tbreach5.data-list.filter.watermark1.label</div>
+    <div class="watermark" ng-show="!searchFilter" translate > tbreach5.data-list.filter.watermark2.label</div>
+</div>
+</div>
+
+<script type="text/ng-template" id="view-profile-button.html">
+	<div><button class="btn btn-info btn-sm btn-block" ng-hide="row.entity.retired||row.entity.display=='admin'||row.entity.display=='daemon'" ng-click="grid.appScope.openProfile(row.entity)">Profile</button><div>
+</script>
+<script type="text/ng-template" id="edit-profile-button.html">
+	<div><button class="btn btn-warning btn-sm btn-block" ng-hide="row.entity.retired||row.entity.display=='admin'||row.entity.display=='daemon'" ng-click="grid.appScope.editProfile(row.entity)">Edit</button><div>
+	<div><button class="btn btn-danger btn-sm btn-block" ng-show="row.entity.retired">Deleted</button><div>
+</script>

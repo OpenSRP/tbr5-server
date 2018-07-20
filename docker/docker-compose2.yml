@@ -1,0 +1,32 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5.7
+    restart: always
+    env_file: .env.production
+    ports:
+     - "3307:3306"
+    volumes:
+     - /var/lib/mysql
+     - ./mysql:/docker-entrypoint-initdb.d
+     
+  postgres:
+    image: postgres:9.5
+    restart: always
+    env_file: .env.production
+    ports: 
+      - "5433:5432"
+    volumes: 
+      - /var/lib/postgresql/data
+      - ./postgres:/docker-entrypoint-initdb.d
+
+  couchdb:
+    image: couchdb:2.1
+    restart: always
+    env_file: .env.production
+    ports:
+      - "5985:5984"
+    volumes:
+      - /opt/couchdb/data
+      - /opt/couchdb/etc
+      - ./couchdb-data-volume:/usr/local/var/lib/couchdb
